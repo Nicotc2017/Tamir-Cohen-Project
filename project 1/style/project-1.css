@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+NZ:wght@100..400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+PE:wght@100..400&family=Satisfy&display=swap");
+
+body {
+  margin: 0;
+  direction: rtl;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f0f0f0; /* Example background color */
+}
+
+.navbar {
+  width: 100%;
+  background-color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.my-header-name {
+  color: #fff;
+  font-family: 'Heebo', sans-serif;
+}
+
+.icon {
+  display: none;
+}
+
+.menu {
+  display: flex;
+  gap: 15px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Heebo', sans-serif;
+}
+
+.main-pg {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.bg-color-blend {
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.name-of-project {
+  font-family: 'Heebo', sans-serif;
+  color: #333;
+}
+
+.name-of-paragraf1 {
+  font-family: 'Heebo', sans-serif;
+  color: #666;
+}
+
+.anchors {
+  margin-top: 20px;
+}
+
+.anchor-sec {
+  background-color: #d31c75;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: 'Heebo', sans-serif;
+}
+
+.icon-s {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.img-icon img {
+  margin: 0 10px;
+  width: 50px;
+  height: 50px;
+}
+
+.main-pic {
+  margin: 20px 0;
+}
+
+.main-pic img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+
+.footer-1 {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.footer-1 .my-name {
+  font-family: 'Heebo', sans-serif;
+}
+
+@media (max-width: 768px) {
+  .icon {
+    display: block;
+  }
+  .menu {
+    display: none;
+  }
+  .navbar .menu.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #333;
+    position: absolute;
+    top: 50px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 375px) {
+  .main-pg {
+    padding: 20px 10px;
+  }
+  .main-pic img {
+    width: 90%;
+  }
+}
